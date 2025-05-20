@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Saver - Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Food Saver</h1>
+        
+    </nav>
+
+    <!-- Menu Section -->
+    <div class="menu-container">
+        <h2>Our Menu</h2>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button onclick="filterMenu('all')">All</button>
+            <button onclick="filterMenu('vegetarian')">Vegetarian</button>
+            <button onclick="filterMenu('non-veg')">Non-Veg</button>
+            <button onclick="filterMenu('dessert')">Dessert</button>
+        </div>
+
+        <!-- Food Items -->
+        <div class="menu-items">
+            <div class="item vegetarian">
+                <img src="pulihora.jpg" alt="Salad">
+                <h3>pulihora</h3>
+                <p>Delicious pulihora</p>
+                <span>$5</span>
+            </div>
+
+            <div class="item non-veg">
+                <img src="burger.png" alt="Burger">
+                <h3>Chicken Burger</h3>
+                <p>Grilled chicken burger with cheese.</p>
+                <span>$8</span>
+            </div>
+
+            <div class="item dessert">
+                <img src="chocolate.jpg" alt="Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Delicious chocolate cake with layers.</p>
+                <span>$6</span>
+            </div>
+
+            <div class="item vegetarian">
+                <img src="vegpasta.jpg" alt="Pasta">
+                <h3>Veg Pasta</h3>
+                <p>Italian-style pasta with tomato sauce.</p>
+                <span>$7</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>

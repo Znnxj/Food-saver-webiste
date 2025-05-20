@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery App</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header with Logo and Title -->
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="logo.png" alt="EasyEats Logo">
+            <h1>EasyEats</h1>
+        </div>
+        <div class="header-buttons">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button id="search-button" onclick="searchFunction()"><i class="fas fa-search"></i></button>
+            </div>
+            <p>Your location: <span id="userLocation"></span></p>
+            <button>Offers</button>
+            <button>Cart</button>
+            <button>Sign Out</button>
+        </div>
+    </header>
+
+    <!-- Food Categories Section -->
+    <!-- Food Categories Section with Horizontal Scroll -->
+    <section class="categories">
+        <h2>Craving For</h2>
+        <div class="scroll-wrapper">
+            <div class="category-container">
+                <div class="category-card">
+                    <img src="starter1.png">
+                    <p>Starters</p>
+                </div>
+                <div class="category-card">
+                    <img src="logo.png">
+                    <p> Rice Items</p>
+                </div>
+                <div class="category-card"><img src="logo.png">Desserts</div>
+                <div class="category-card"><img src="logo.png">Main Course</div>
+                <div class="category-card"><img src="logo.png">Beverages</div>
+                <div class="category-card"><img src="logo.png">Salads</div>
+                <div class="category-card"><img src="logo.png">Soups</div>
+                <div class="category-card"><img src="logo.png">Snacks</div>
+                <div class="category-card"><img src="logo.png">Seafood</div>
+                <div class="category-card"><img src="logo.png">Vegetarian</div>
+                <div class="category-card"><img src="logo.png">Pasta</div>
+                <div class="category-card"><img src="logo.png">Pizza</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top-Rated Restaurants Section -->
+    <section class="restaurants">
+        <h2>Top-Rated Nearby</h2>
+        <div class="scroll-wrapper">
+            <div class="restaurant-container">
+                <a href="menu.html?restaurant=pizza-palace" class="restaurant-link">
+                    <div class="restaurant-card">
+                        <img src="dhokla-res.jpg" alt="Top 1 Logo">
+                        <div class="restaurant-info">
+                            <h3>Grill Haven</h3>
+                            <div class="star-rating"><p>Rating: ★★★★★</p></div>
+                            <p>Distance: 1.5 km</p>
+                            <p>Est. Delivery: 18 min</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="menu.html?restaurant=pizza-palace" class="restaurant-link">
+                    <div class="restaurant-card">
+                        <img src="dhokla-res.jpg" alt="Top 1 Logo">
+                        <div class="restaurant-info">
+                            <h3>Grill Haven</h3>
+                            <div class="star-rating"><p>Rating: ★★★★★</p></div>
+                            <p>Distance: 1.5 km</p>
+                            <p>Est. Delivery: 18 min</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="menu.html?restaurant=pizza-palace" class="restaurant-link">
+                    <div class="restaurant-card">
+                        <img src="dhokla-res.jpg" alt="Top 1 Logo">
+                        <div class="restaurant-info">
+                            <h3>Grill Haven</h3>
+                            <div class="star-rating"><p>Rating: ★★★★★</p></div>
+                            <p>Distance: 1.5 km</p>
+                            <p>Est. Delivery: 18 min</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="menu.html?restaurant=pizza-palace" class="restaurant-link">
+                    <div class="restaurant-card">
+                        <img src="dhokla-res.jpg" alt="Top 1 Logo">
+                        <div class="restaurant-info">
+                            <h3>Grill Haven</h3>
+                            <div class="star-rating"><p>Rating: ★★★★★</p></div>
+                            <p>Distance: 1.5 km</p>
+                            <p>Est. Delivery: 18 min</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="menu.html?restaurant=pizza-palace" class="restaurant-link">
+                    <div class="restaurant-card">
+                        <img src="dhokla-res.jpg" alt="Top 1 Logo">
+                        <div class="restaurant-info">
+                            <h3>Grill Haven</h3>
+                            <div class="star-rating"><p>Rating: ★★★★★</p></div>
+                            <p>Distance: 1.5 km</p>
+                            <p>Est. Delivery: 18 min</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="menu.html?restaurant=pizza-palace" class="restaurant-link">
+                    <div class="restaurant-card">
+                        <img src="dhokla-res.jpg" alt="Top 1 Logo">
+                        <div class="restaurant-info">
+                            <h3>Grill Haven</h3>
+                            <div class="star-rating"><p>Rating: ★★★★★</p></div>
+                            <p>Distance: 1.5 km</p>
+                            <p>Est. Delivery: 18 min</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurants Section -->
+    <section class="restaurants">
+        <h1>Explore Restaurants</h1>
+        <div class="scroll-wrapper">
+            <div class="restaurant-container">
+                <div class="restaurant-card">
+                    <img src="logo.png" alt="Restaurant 1 Logo">
+                    <div class="restaurant-info">
+                        <h3>Pizza Palace</h3>
+                        <div class="star-rating"><p>Rating: ★★★★★</p></div>
+                        <p>Distance: 2.3 km</p>
+                        <p>Est. Delivery: 25 min</p>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="logo.png" alt="Restaurant 1 Logo">
+                    <div class="restaurant-info">
+                        <h3>Pizza Palace</h3>
+                        <div class="star-rating"><p>Rating: ★★★★★</p></div>
+                        <p>Distance: 2.3 km</p>
+                        <p>Est. Delivery: 25 min</p>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="logo.png" alt="Restaurant 1 Logo">
+                    <div class="restaurant-info">
+                        <h3>Pizza Palace</h3>
+                        <div class="star-rating"><p>Rating: ★★★★★</p></div>
+                        <p>Distance: 2.3 km</p>
+                        <p>Est. Delivery: 25 min</p>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="logo.png" alt="Restaurant 1 Logo">
+                    <div class="restaurant-info">
+                        <h3>Pizza Palace</h3>
+                        <div class="star-rating"><p>Rating: ★★★★★</p></div>
+                        <p>Distance: 2.3 km</p>
+                        <p>Est. Delivery: 25 min</p>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="logo.png" alt="Restaurant 2 Logo">
+                    <div class="restaurant-info">
+                        <h3>Burger Bonanza</h3>
+                        <div class="star-rating"><p>Rating: ★★★★★</p></div>
+                        <p>Distance: 1.8 km</p>
+                        <p>Est. Delivery: 20 min</p>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <div><img src="logo.png" alt="Restaurant 3 Logo"></div>
+                    <div class="restaurant-info">
+                        <h3>Sushi Spot</h3>
+                        <div class="star-rating"><p>Rating: ★★★★★</p></div>
+                        <p>Distance: 3.5 km</p>
+                        <p>Est. Delivery: 30 min</p>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="logo.png" alt="Restaurant 4 Logo">
+                    <div class="restaurant-info">
+                        <h3>Taco Town</h3>
+                        <div class="star-rating"><p>Rating: ★★★★★</p></div>
+                        <p>Distance: 2.7 km</p>
+                        <p>Est. Delivery: 28 min</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Cuisines Near Me Section -->
+    <section class="best-cuisines">
+        <h2>Best Cuisines Near Me</h2>
+        <div class="filter-container">
+            <select class="filter" id="rating-filter">
+                <option value="">Filter by Rating</option>
+                <option value="4">4+ Stars</option>
+                <option value="3">3+ Stars</option>
+            </select>
+            <select class="filter" id="delivery-time-filter">
+                <option value="">Filter by Delivery Time</option>
+                <option value="20">Under 20 min</option>
+                <option value="30">Under 30 min</option>
+            </select>
+            <select class="filter" id="cost-range-filter">
+                <option value="">Filter by Cost Range</option>
+                <option value="low">$ (Low)</option>
+                <option value="medium">$$ (Medium)</option>
+                <option value="high">$$$ (High)</option>
+            </select>
+        </div>
+        <div class="cuisine-container">
+            <div class="cuisine-card">
+                <h3>South Indian Near Me</h3>
+            </div>
+            <div class="cuisine-card">
+                <h3>Chinese Near Me</h3>
+            </div>
+            <div class="cuisine-card">
+                <h3>North Indian Near Me</h3>
+            </div>
+            <div class="cuisine-card">
+                <h3>Indian Near Me</h3>
+            </div>
+            <div class="cuisine-card">
+                <h3>Korean Near Me</h3>
+            </div>
+            <div class="cuisine-card">
+                <h3>Andhra Restaurant Near Me</h3>
+            </div>
+            <div class="cuisine-card">
+                <h3>Italian Near Me</h3>
+            </div>
+            <div class="cuisine-card">
+                <h3>Punjabi Near ME</h3>
+            </div>
+            <div class="cuisine-card">
+                <h3>Kerala Restaurant Near Me</h3>
+            </div>
+        
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- About & Contact -->
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>We provide top-quality services to help businesses grow online. Connect with us for the best solutions.</p>
+                <p><i class="fas fa-envelope"></i> contact@easyeats.com</p>
+                <p><i class="fas fa-phone"></i> +91 9866451432</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="footer-column">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- Social Media & CTA -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" id="fb"></i></a>
+                    <a href="https://x.com/?lang=en&mx=2" target="_blank"><i class="fab fa-twitter" id="x"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="fab fa-instagram" id="ig"></i></a>
+                    <a href="https://in.linkedin.com/" target="_blank"><i class="fab fa-linkedin" id="lid"></i></a>
+                </div>
+                <button class="cta-button">Get Started</button>
+            </div>
+        </div>
+
+        <!-- Copyright & Legal Info -->
+        <div class="footer-bottom">
+            <p>© 2025 EasyEats. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="foodsaver.js"></script>
+</body>
+</html>

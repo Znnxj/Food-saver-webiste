@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Food Saver</title>
+    <link rel="stylesheet" href="registration.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <img class="logo" src="Screenshot_2025-02-08_155145-removebg-preview.png" alt="EasyEats Logo">
+        <h1>EASYEATS</h1>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Create an Account</h2>
+            <form id="registration-form">
+
+                <!-- Basic Info Section -->
+                <fieldset class="form-step active">
+                    <legend>Basic Information</legend>
+                    
+                    <label for="name"><i class="material-icons">person</i>     Full Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email"><i class="material-icons">mail</i>     Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="username"><i class="material-icons">person</i>     Username</label>
+                    <input type="text" id="username" name="username">
+
+                    <label for="password"><i class="material-icons">password</i>     Password</label>
+                    <input type="password" id="password" name="password">
+
+                    <label for="confirm-password"><i class="material-icons">password</i>     Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password">
+
+                    <button type="button" class="next-btn"><i class="material-icons">arrow_forward_ios</i></button>
+                </fieldset>
+
+                <!-- Contact & Address Section -->
+                <fieldset class="form-step">
+                    <legend>Contact & Address Details</legend>
+
+                    <label for="mobile"><i class="material-icons">call</i>  Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile">
+
+                    <label for="address"><i class="material-icons">home</i>  Address</label>
+                    <input type="text" id="address" name="address">
+
+                    <label for="area"><i class="material-icons">location_on</i>  Area/Locality</label>
+                    <input type="text" id="area" name="area">
+
+                    <label for="city"><i class="material-icons">location_on</i>  City</label>
+                    <input type="text" id="city" name="city">
+
+                    <label for="state"><i class="material-icons">location_on</i>  State</label>
+                    <input type="text" id="state" name="state">
+
+                    <label for="country"><i class="material-icons">location_on</i>  Country</label>
+                    <select id="country" name="country">
+                        <option value="">Select your country</option>
+                    </select>
+
+                    <label for="pincode"><i class="material-icons">location_on</i>  Pincode</label>
+                    <input type="text" id="pincode" name="pincode">
+
+                    <button type="button" class="prev-btn"><i class="material-icons">arrow_back_ios</i></button>
+                    <button type="button" class="next-btn"><i class="material-icons">arrow_forward_ios</i></button>
+                </fieldset>
+
+                <!-- Additional Details Section -->
+                <fieldset class="form-step">
+                    <legend>Additional Details</legend>
+
+                    <label for="profile-pic">Profile Picture (Optional)</label>
+                    <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+
+                    <label for="role">Register As</label>
+                    <select id="role" name="role" required>
+                        <option value="">Select Role</option>
+                        <option value="donor">Donor</option>
+                        <option value="recipient">Recipient</option>
+                        <option value="both">Both</option>
+                    </select>
+
+                    <label>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        I agree to the <a href="#">terms and conditions</a>
+                    </label>
+                     <button type="button" class="prev-btn"><i class="material-icons">arrow_back_ios</i></button>
+                    <button type="submit">Create Account</button>
+                </fieldset>
+
+            </form>
+
+            <p id="registration-message"></p>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+
+    <script src="foodsaver.js"></script>
+</body>
+</html>

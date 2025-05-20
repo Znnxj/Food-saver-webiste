@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="logo.png">
+    <title>EasyEats</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='enter.css') }}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+    <header class="header">
+        <img class="logo" src="{{ url_for('static', filename='logo.png') }}" alt="EasyEats Logo">
+        <h1>EASYEATS</h1>
+
+        <div class="location-container">
+            <input type="text" id="addressInput" class="location-input" placeholder="Enter your address..." onfocus="showDropdown()" onblur="hideDropdown()">
+            <div class="dropdown" id="locationDropdown">
+                <div onclick="showMap()">📍 Choose from Map</div>
+                <div onclick="useCurrentLocation()">🌍 Auto-detect My Location</div>
+            </div>
+        </div>
+        <div class="header-buttons">
+            <button class="login-btn"  onclick="window.location.href='{{ url_for('login') }}'">Login</button>
+            <button class="signup-btn" onclick="window.location.href='{{ url_for('registration') }}'">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Map for Address Selection -->
+    <div id="map" class="map-container"></div>
+
+    <section class="intro-section">
+        <div class="text-container">
+            <h1 id="animated-text">With <span style="color: red;">EasyEats,</span> you order, we deliver, and we share!</h1>
+        </div>
+
+        <div class="slider-container">
+            <img src="{{ url_for('static', filename='img1.png') }}" alt="Delicious food image 1" class="slider-img active">
+            <img src="{{ url_for('static', filename='img2.png') }}" alt="Delicious food image 2" class="slider-img">
+            <img src="{{ url_for('static', filename='img3.png') }}" alt="Delicious food image 3" class="slider-img">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- About & Contact -->
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>We provide top-quality services to help businesses grow online. Connect with us for the best solutions.</p>
+                <p><i class="fas fa-envelope"></i> contact@easyeats.com</p>
+                <p><i class="fas fa-phone"></i> +91 9866451432</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="footer-column">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- Social Media & CTA -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" id="fb"></i></a>
+                    <a href="https://x.com/?lang=en&mx=2" target="_blank"><i class="fab fa-twitter" id="x"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="fab fa-instagram" id="ig"></i></a>
+                    <a href="https://in.linkedin.com/" target="_blank"><i class="fab fa-linkedin" id="lid"></i></a>
+                </div>
+                <button class="cta-button">Get Started</button>
+            </div>
+        </div>
+
+        <!-- Copyright & Legal Info -->
+        <div class="footer-bottom">
+            <p>© 2025 EasyEats. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="{{ url_for('static', filename='enter.js') }}"></script>
+
+
+</body>
+</html>
